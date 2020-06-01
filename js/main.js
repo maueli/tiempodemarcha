@@ -113,14 +113,22 @@ $(document).ready(function(){
           tiempotramo1=(tiempotramo1/2).toFixed(2)
         };
         /*alert(pendiente);*/
-        alert("En este tramo serán "+tiempotramo1+"hs");
-        $(this).siblings(".tiempo").text("En este tramo serán "+tiempotramo1+"hs");
+
+        var tiempotramo2 = Math.floor(tiempotramo1);
+        var tiempotramo3 = Math.round(( tiempotramo1 - Math.floor(tiempotramo1) )*60 ) ;
+
+        if(tiempotramo3==0){
+          tiempotramo3 = "00";
+        };
+
+        alert("En este tramo serán "+tiempotramo2+ ":"+tiempotramo3+"hs");
+        $(this).siblings(".tiempo").text("En este tramo serán "+tiempotramo2+ ":"+tiempotramo3+"hs");
 
 
 
         var diabarra = $(this).parents().parents().parents().parents().parents(".dia").attr("data-panel");
         var tramobarra = $(this).parents(".tramo").attr("data-panel");
-        $(".barra-dias"+diabarra+" ").children(".barra-tramoss"+diabarra+" ").children().children(".barra-tramtram"+tramobarra  +" ").text(tiempotramo1+"hs");
+        $(".barra-dias"+diabarra+" ").children(".barra-tramoss"+diabarra+" ").children().children(".barra-tramtram"+tramobarra  +" ").text(tiempotramo2+ ":"+tiempotramo3+"hs");
 
 
         /* resultado[diabarra][tramobarra] = tiempotramo1; */
