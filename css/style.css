@@ -265,10 +265,6 @@ font-size:40px;
 	padding-bottom:10px;
 }
 
-.emprolijando{
-	display:none;
-}
-
 @media screen and (max-width: 991px) {
 	.vel-alt2{
 		letter-spacing: 2px;
@@ -295,5 +291,13 @@ font-size:40px;
 }
 
 @media screen and (max-height: 550px) {
-.resumen{margin-top:10px;}
+	.resumen{margin-top:10px;}
+}
+
+
+@media screen and (max-width: 440px) {
+	.copyright{
+		font-size: 7px;
+		left:15%;
+	}
 }
