@@ -265,6 +265,14 @@ font-size:40px;
 	padding-bottom:10px;
 }
 
+.copyright3{
+position:absolute:
+bottom:0px;
+font-size:12px;
+}
+
+
+
 @media screen and (max-width: 991px) {
 	.vel-alt2{
 		letter-spacing: 2px;

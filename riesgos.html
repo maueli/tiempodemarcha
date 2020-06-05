@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-  <title> Portal Montañista </title>
+  <title> Analisis de Riesgos</title>
 
 
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="Portal Montañista" name="description">
+  <meta content="fisica educacion" name="keywords">
+  <meta content="Analisis de Riesgos" name="description">
 
   <!-- Favicons
   <link href="img/favicon.png" rel="icon">
@@ -28,7 +28,6 @@
  <link href="fontawesome/css/all.css" rel="stylesheet">
  <link href="css/jquery.modal.min.css" rel="stylesheet">
  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/style_indice.css" rel="stylesheet">
   <!--
 
   	<link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -57,46 +56,68 @@
 
 
 <div class="container text-center titulo">
-  Portal Montañista
+  Análisis de Riesgos
 </div>
 
 
-<div class="container-fluid text-center indice">
+<div class="container text-center inputs">
   <div class="row">
-    <div class="col-md-6">
-      <div class="indice3">
-        <a href="riesgos.html">
-          <div class="indice2">
-            Calculo <br> de Riesgos
-          </div>
-        </a>
-      </div>
+    <div class="col-md-3 offset-md-3">
+      Riesgo
     </div>
-    <div class="col-md-6">
-      <div class="indice3">
-        <a href="tiempos.html">
-          <div class="indice2">
-            Calculo de <br>Tiempo de Marcha
-          </div>
-        </a>
-      </div>
+    <div class="col-md-4">
+      <input class="ancho" id="riesgo" type="text">
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 text-center copyright2">
-      Powered by <strong>Maueli</strong> (maueli89@gmail.com). Version Beta.
+    <div class="col-md-3 offset-md-3">
+      Probabilidad
+    </div>
+    <div class="col-md-4">
+      <input class="ancho" id="probabilidad" type="number" min="0" max="10">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-3">
+      Tiempo de exposición
+    </div>
+    <div class="col-md-4">
+      <input class="ancho" id="tiempo" type="number" min="0" max="10">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 offset-md-3">
+      Daño Posible
+    </div>
+    <div class="col-md-4">
+      <input class="ancho" id="daño" type="number" min="0" max="10">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button id="boton"> Ok </button>
     </div>
   </div>
 </div>
 
 
 <div class="container">
-
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div id="tester" style="width:100%;height:100%;"></div>
+    </div>
+  </div>
 </div>
 
 
+<div class="container text-center">
+  <button id="nuevo"> Nuevo Riesgo </button>
+</div>
 
 
+<div class="text-center copyright3">
+  Powered by <strong>Maueli</strong> (maueli89@gmail.com). Version Beta.
+</div>
 
 </body>
 
@@ -114,7 +135,8 @@
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.modal.min.js"></script>
-
+<script type="text/javascript" src="js/main_riesgos.js"></script>
+<script type="text/javascript" src="js/plotly-latest.min.js"></script>
 
 
 
